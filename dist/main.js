@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/App.js":
-/*!********************!*\
-  !*** ./src/App.js ***!
-  \********************/
+/***/ "./src/App.jsx":
+/*!*********************!*\
+  !*** ./src/App.jsx ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nfunction App() {\n  var googleLogin = function googleLogin() {\n    var xhttp = new XMLHttpRequest();\n\n    xhttp.onreadystatechange = function () {\n      if (this.readyState == 4 && this.status == 200) {\n        console.log(this.responseText);\n        window.open(this.responseText);\n      }\n    };\n\n    xhttp.open(\"GET\", \"./login\", true);\n    xhttp.send();\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", null, \"hi from react\", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    type: \"button\",\n    onClick: function onClick() {\n      googleLogin();\n    }\n  }, \"Google is fun\")));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://webpack-fun/./src/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar App = function App() {\n  var googleLogin = function googleLogin() {\n    var xhttp = new XMLHttpRequest();\n\n    xhttp.onreadystatechange = function () {\n      if (xhttp.readyState === 4 && xhttp.status === 200) {\n        window.open(xhttp.responseText);\n      }\n    };\n\n    xhttp.open('GET', './login', true);\n    xhttp.send();\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", null, \"hi from react\", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    type: \"button\",\n    onClick: function onClick() {\n      googleLogin();\n    }\n  }, \"Google is fun\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://webpack-fun/./src/App.jsx?");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/index.jsx":
+/*!***********************!*\
+  !*** ./src/index.jsx ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _App_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.js */ \"./src/App.js\");\n// import googleUrl from './ajax.js'\n// document.querySelector(\"#target\").innerHTML = googleUrl;\n// document.querySelector(\"#google\").href = googleUrl;\n\n\n\nconsole.log(_App_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n(0,react_dom__WEBPACK_IMPORTED_MODULE_1__.render)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), document.querySelector(\"#target\"));\n\n//# sourceURL=webpack://webpack-fun/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ \"./src/App.jsx\");\n// import googleUrl from './ajax.js'\n// document.querySelector(\"#target\").innerHTML = googleUrl;\n// document.querySelector(\"#google\").href = googleUrl;\n\n\n\n(0,react_dom__WEBPACK_IMPORTED_MODULE_1__.render)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), document.querySelector('#target'));\n\n//# sourceURL=webpack://webpack-fun/./src/index.jsx?");
 
 /***/ }),
 
@@ -180,7 +180,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.jsx");
 /******/ 	
 /******/ })()
 ;

@@ -4,12 +4,12 @@
 
 // document.querySelector("#google").href = googleUrl;
 
-import React from "react";
-import {render} from "react-dom";
+import React from 'react';
+import { render } from 'react-dom';
 
-import App from './App.js';
-console.log(App);
+import App from './App';
+
 render(
-    <App/>,
-    document.querySelector("#target")
+  <App />,
+  document.querySelector('#target'),
 );
